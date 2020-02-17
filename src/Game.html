@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p {
+            display: inline-block;
+        }
+
+        canvas {
+            margin-top: -15px;
+            padding: 0;
+        }
+
+        button {
+            background-color: white;
+            border-radius: 20px;
+            border: none;
+            color: blue;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            line-height: 15px;
+            outline: none;
+            padding: 15px 15px;
+        }
+
+        .to {
+            display: flex;
+            height: 90px;
+        }
+
+        .to > div {
+            margin: 20px 10px;
+        }
+
+        .to p {
+            border: solid black 1px;
+            color: black;
+            padding: 18px;
+            font-size: 16.7px;
+        }
+
+        .up {
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+
+        .n {
+            border: solid black 1px;
+            border-radius: 20px;
+            display: inline-flex;
+        }
+
+        .n :last-child {
+            border-left: solid black 1px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="to">
+    <p>Number of current shapes: <span id="num-current"></span></p>
+    <p>Surface area occupied: <span id="surface-area"></span></p>
+</div>
+<div id="canvas"></div>
+<div class="to up">
+    <div class="n">
+        <button id="minus-n">-</button>
+        <button id="plus-n">+</button>
+    </div>
+    <p id="num-shapes-per-sec"></p>
+    <div class="n">
+        <button id="minus-g">-</button>
+        <button id="plus-g">+</button>
+    </div>
+    <p id="gravity-value"></p>
+</div>
+</body>
+</html>
